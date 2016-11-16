@@ -8,4 +8,4 @@
 
 2016.07.01 - js_backbone_v1.1
 
-           - /asset/js/vendor/plugin/swipe.js : ¸®½ºÆ® 2°³ ÀÏ¶§ ¿À·ùºÎºĞ ¼öÁ¤
+           - /asset/js/vendor/plugin/swipe.js : ë¦¬ìŠ¤íŠ¸ 2ê°œ ì¼ë•Œ ì˜¤ë¥˜ë¶€ë¶„ ìˆ˜ì •
