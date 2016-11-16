@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+        <!-- Default Site info -->
+        <title>dev.designfever</title>
+		<meta name="title" content="This is designfever!">
+        <meta name="description" content="This is designfever!" />
+        <meta name="keywords" content="df, design, fever, designfever, IX, good" />
+        <meta name="apple-mobile-web-app-title" content="dev.designfever">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+        <!-- Favorites Thumbnails -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="image_src" href="share-thumb_200x200.png">
+		
+		<!-- SEO -->
+		<!-- todo 현재페이지와 동일한 페이지가 다른언어로 존재하는경우(다국어페이지) alternate 추가시켜주기  -->
+		<link rel="canonical" href="http://dev.designfever.com/">
+		<link rel="alternate" href="http://dev.designfever.com/" hreflang="ko" />
+
+        <!-- for SNS -->
+        <!-- *********************************************************************************************** -->
+        <!-- todo 쉐어 이미지 경로는 full-url경로로 작성할 것 -->
+
+        <!-- FB -->
+        <meta property="og:site_name" content="dev.designfever">
+        <meta property="og:title" content="dev.designfever">
+        <meta property="og:description" content="This is designfever!">
+        <meta property="og:url" content="http://dev.designfever.com/">
+        <meta property="og:image" content="http://dev.designfever.com/share-thumb_200x200.png">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="ko_KR" />
+
+        <!-- TW -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="dev.designfever">
+        <meta name="twitter:description" content="This is designfever!">
+        <meta name="twitter:url" content="http://dev.designfever.com/">
+        <meta name="twitter:image" content="http://dev.designfever.com/share-thumb_200x200.png">
+
+
+        <!-- common stylesheet -->
+        <link rel="stylesheet" href="assets/css/common.css">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+
+        <!-- common JS -->
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="assets/js/vendor/detect.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script src="assets/js/common/GA_TrackingCode.js"></script>
+        <script type="text/javascript">
+            TrackingCode.pageTagging( 'main' );
+        </script>
+
+        <!-- sns share API FN -->
+        <script src="assets/js/common/share.api.js"></script>
+        <script type="text/javascript">
+            function share_to_TW() { callShare( 'TW' ); }		// twitter
+            function share_to_FB() { callShare( 'FB' ); }		// Facebook
+            function share_to_PR() { callShare( 'PR' ); }		// pinterest
+            function share_to_GL() { callShare( 'GL' ); }		// google plus
+            function callShare( $sns_id ) {
+                var TITLE = $('meta[name=title]').attr('content');
+                var DEC = $('meta[name=description]').attr('content');
+                var THUMB_BIG = 'http://dev.designfever.com/share-thumb-big_400x400.png';
+                var URL = "http://dev.designfever.com/";
+                share_contents( $sns_id, URL, TITLE, DEC,  THUMB_BIG );
+            }
+
+        </script>
+
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- work area -------------------------------------------------------------------------------------------- -->
+
+        <!-- CSS for page -->
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <!-- JS for page -->
+        <script src="assets/js/interactive/main.js"></script>
+
+    </head>
+    <body>
+
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div>
+            Hellow. This is designfever!
+        </div>
+
+    </body>
+</html>
